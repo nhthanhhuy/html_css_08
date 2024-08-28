@@ -4,13 +4,7 @@
     box-sizing: border-box;
 }
 
-:root {
-    // --text-color: #1a162e;
-    --text-color: brightness(0) saturate(100%) invert(7%) sepia(33%)
-        saturate(1499%) hue-rotate(215deg) brightness(97%) contrast(95%);
-    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(33%)
-        saturate(1499%) hue-rotate(215deg) brightness(97%) contrast(95%);
-}
+
 
 html {
     font-size: 62.5%;
