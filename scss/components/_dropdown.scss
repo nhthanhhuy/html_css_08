@@ -1,8 +1,10 @@
+@use "../abstracts";
+
 .dropdown {
     position: absolute;
     left: 0;
     padding-top: 54px;
-    display: block;
+    display: none;
     width: min(1240px, 100%);
 
     &__inner {
@@ -44,10 +46,15 @@
         flex-shrink: 0;
         width: 36px;
         height: 36px;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+
         &-1 {
             width: 30px;
             height: 30px;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         &-2 {
@@ -93,7 +100,7 @@
     }
 
     + .menu-column {
-        margin-top: 30px;
+        margin-top: 19px;
     }
 }
 
@@ -102,7 +109,7 @@
     padding-left: var(--inner-padding);
     inset: 0 0 0 var(--main-column-width);
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     overflow-y: auto;
