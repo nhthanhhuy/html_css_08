@@ -116,4 +116,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     overflow-y: auto;
+
+    &--not-main {
+        position: initial;
+        inset: initial;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+        padding-left: 0;
+    }
 }
