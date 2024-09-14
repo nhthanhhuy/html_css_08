@@ -1207,10 +1207,101 @@ select {
     --grid-gutter-y: 90px;
   }
 }
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 1399.98px) {
+  .d-xxl-block {
+    display: block;
+  }
+  .d-xxl-flex {
+    display: flex;
+  }
+  .d-xxl-grid {
+    display: grid;
+  }
+  .d-xxl-none {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .d-xl-block {
+    display: block;
+  }
+  .d-xl-flex {
+    display: flex;
+  }
+  .d-xl-grid {
+    display: grid;
+  }
+  .d-xl-none {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+  .d-lg-grid {
+    display: grid;
+  }
+  .d-lg-none {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-grid {
+    display: grid;
+  }
+  .d-md-none {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+  .d-sm-grid {
+    display: grid;
+  }
+  .d-sm-none {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  html.dark {
+    --header-shadow-color: rgba(0, 0, 0, 0.2);
+  }
+}
 html.dark {
   --text-color: #fff;
-  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%)
-      saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%);
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg)
+      brightness(103%) contrast(101%);
   --body-bg: #292e39;
   --header-bg-color: #171c28;
   --top-act-group-bg-color: #292e39;
@@ -1218,38 +1309,32 @@ html.dark {
   --top-act-group-separate: #ededf6;
   --dropdown-bg-color: #292e39;
   --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-  --dropdown-arrow-color: brightness(0) saturate(100%) invert(15%) sepia(8%)
-      saturate(1512%) hue-rotate(184deg) brightness(93%) contrast(90%);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(1512%) hue-rotate(184deg)
+      brightness(93%) contrast(90%);
   --top-menu-border-color: #171c28;
-  --menu-column-icon-color: brightness(0) saturate(100%) invert(100%)
-      sepia(12%) saturate(2085%) hue-rotate(278deg) brightness(104%)
-      contrast(97%);
-}
-@media (max-width: 991.98px) {
-  html.dark {
-    --header-shadow-color: rgba(0, 0, 0, 0.2);
-  }
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(2085%)
+      hue-rotate(278deg) brightness(104%) contrast(97%);
 }
 
+@media (max-width: 991.98px) {
+  html {
+    --header-bg-color: #fff;
+    --header-shadow-color: rgba(237, 237, 246, 0.2);
+  }
+}
 html {
-  --text-color: brightness(0) saturate(100%) invert(7%) sepia(33%)
-      saturate(1499%) hue-rotate(215deg) brightness(97%) contrast(95%);
-  --icon-color: brightness(0) saturate(100%) invert(7%) sepia(33%)
-      saturate(1499%) hue-rotate(215deg) brightness(97%) contrast(95%);
+  --dropdown-bg-color: #fff;
+  --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+  --top-menu-border-color: #d2d1d6;
+  --text-color: brightness(0) saturate(100%) invert(7%) sepia(33%) saturate(1499%) hue-rotate(215deg)
+      brightness(97%) contrast(95%);
+  --icon-color: brightness(0) saturate(100%) invert(7%) sepia(33%) saturate(1499%) hue-rotate(215deg)
+      brightness(97%) contrast(95%);
   --body-bg: #f6f6f6;
   --header-bg-color: #eeeeee;
   --top-act-group-bg-color: #fff;
   --top-act-group-shadow: rgba(237, 237, 246, 0.2);
   --top-act-group-separate: #ededf6;
-  --dropdown-bg-color: #fff;
-  --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
-  --top-menu-border-color: #d2d1d6;
-}
-@media (max-width: 991.98px) {
-  html {
-    --header-bg-color: #fff;
-    --header-shadow-color: rgba(237, 237, 246, 0.20);
-  }
 }
 
 .logo {
@@ -1420,15 +1505,6 @@ html {
     padding: 16px 0;
   }
 }
-.top-bar__more {
-  display: none;
-}
-@media (max-width: 991.98px) {
-  .top-bar__more {
-    display: flex;
-    align-items: center;
-  }
-}
 
 .navbar {
   margin-left: 129px;
@@ -1486,9 +1562,6 @@ html {
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
-  }
-  .navbar__item:hover .dropdown {
-    display: none;
   }
 }
 @media (max-width: 991.98px) {
