@@ -1,7 +1,7 @@
 @use "../abstracts";
 
 html.dark {
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 
