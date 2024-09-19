@@ -125,5 +125,13 @@ $gutters: (
         .container {
             max-width: $max-width;
         }
+
+        @include make-row-columns($infix);
+
+        @include make-columns($infix);
+
+        @include make-offsets($infix);
+
+        @include make-gutters($infix);
     }
 }
